@@ -23,6 +23,9 @@ public class MenuPedido {
                 case 1:
                     this.buscarPedidosPorFecha(sc);
                     break;
+                case 2:
+                    this.eliminarPedido(sc);
+                    break;
                 case 0:
                     continuar = false;
                     break;
@@ -37,6 +40,7 @@ public class MenuPedido {
         System.out.println("\n---------Pedido---------");
 
         System.out.println("1.- Buscar pedidos entre fechas");
+        System.out.println("2.- Eliminar pedido");
         System.out.println("0.- Volver");
 
         System.out.print("Elige una opcion: ");
@@ -58,5 +62,13 @@ public class MenuPedido {
         for (PedidoDTO pedidoDTO : pedidos) {
             System.out.println(pedidoDTO.toString());
         }
+    }
+
+    private void eliminarPedido(Scanner sc) {
+
+        System.out.print("Introduce el codigo del pedido: ");
+        int codigoPedido = sc.nextInt();
+
+        pedidoDAO.borrarPedido(codigoPedido, sc);
     }
 }
