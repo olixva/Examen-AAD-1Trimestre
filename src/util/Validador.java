@@ -44,4 +44,12 @@ public class Validador {
         String mensaje = "Error: El codigo del producto debe tener entre 4 y 6 caracteres alfanumericos.";
         return pedir(regex, mensaje);
     }
+
+    //Funcion que pide una fecha en formato AAAA-MM-DD
+
+    public static String pedirFecha() {
+        String regex = "[0-9]{4}-[0-9]{2}-[0-9]{2}";
+        String mensaje = "Error: La fecha debe tener el formato AAAA-MM-DD.";
+        return pedir(regex, mensaje);
+    }
 }

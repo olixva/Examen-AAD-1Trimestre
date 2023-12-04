@@ -39,6 +39,9 @@ public class Menu {
                 case 3:
                     (new MenuOficina()).mostrarSubMenu(sc);
                     break;
+                case 4:
+                    (new MenuPedido()).mostrarSubMenu(sc);
+                    break;
             }
         }
     }
@@ -48,6 +51,7 @@ public class Menu {
         System.out.println("1.- Cliente");
         System.out.println("2.- Producto");
         System.out.println("3.- Oficina");
+        System.out.println("4.- Pedido");
         System.out.println("0.- Salir");
 
         return sc.nextInt();
