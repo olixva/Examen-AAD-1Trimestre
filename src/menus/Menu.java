@@ -12,7 +12,7 @@ public class Menu {
         try {
             menu();
         } catch (InputMismatchException e) {
-            System.out.println("Error: Ingresa un valor entero valido.");
+            System.out.println("Error: Ingresa un valor valido.");
         } finally {
             sc.close();
         }
@@ -33,6 +33,9 @@ public class Menu {
                 case 1:
                     (new MenuCliente()).mostrarSubMenu(sc);
                     break;
+                case 2:
+                    (new MenuProducto()).mostrarSubMenu(sc);
+                    break;
             }
         }
     }
@@ -40,6 +43,7 @@ public class Menu {
     private static int getTabla() {
         System.out.println("\n-----------MENU-----------");
         System.out.println("1.- Cliente");
+        System.out.println("2.- Producto");
         System.out.println("0.- Salir");
 
         return sc.nextInt();

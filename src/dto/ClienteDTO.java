@@ -1,7 +1,5 @@
 package dto;
 
-import java.sql.Date;
-
 public class ClienteDTO {
 
     private int codigoCliente;
