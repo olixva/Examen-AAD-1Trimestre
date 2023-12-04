@@ -31,32 +31,17 @@ public class Menu {
                     continuar = false;
                     break;
                 case 1:
-                    
+                    (new MenuCliente()).mostrarSubMenu(sc);
                     break;
-
             }
         }
     }
 
     private static int getTabla() {
         System.out.println("\n-----------MENU-----------");
-        System.out.println("1.- Alumno");
+        System.out.println("1.- Cliente");
         System.out.println("0.- Salir");
 
-        return sc.nextInt();
-    }
-
-    // Opciones generales para algunos submenus
-    public static int opciones(String tabla) {
-        System.out.println("\n---------" + tabla + "---------");
-
-        System.out.println("1.- Listar " + tabla);
-        System.out.println("2.- Crear " + tabla);
-        System.out.println("3.- Actualizar " + tabla);
-        System.out.println("4.- Eliminar " + tabla);
-        System.out.println("5.- Volver");
-
-        System.out.print("Elige una opcion: ");
         return sc.nextInt();
     }
 }
