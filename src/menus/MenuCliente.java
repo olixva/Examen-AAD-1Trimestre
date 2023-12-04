@@ -41,6 +41,7 @@ public class MenuCliente {
         return sc.nextInt();
     }
 
+    // Funciones de Cliente
     private void listarClientes() {
 
         List<ClienteDTO> clientes = clienteDAO.seleccionar();
