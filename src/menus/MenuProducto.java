@@ -60,14 +60,14 @@ public class MenuProducto {
         System.out.print("Introduce el codigo del producto: ");
         producto.setCodigoProducto(Validador.pedirCodigoProducto());
         System.out.print("Introduce el nombre del producto: ");
-        producto.setNombre(sc.next());
+        producto.setNombre(sc.nextLine());
         pedirGama(sc, producto);
         System.out.print("Introduce las dimensiones del producto: ");
-        producto.setDimensiones(sc.next());
+        producto.setDimensiones(sc.nextLine());
         System.out.print("Introduce el proveedor del producto: ");
-        producto.setProveedor(sc.next());
+        producto.setProveedor(sc.nextLine());
         System.out.print("Introduce la descripcion del producto: ");
-        producto.setDescripcion(sc.next());
+        producto.setDescripcion(sc.nextLine());
         System.out.print("Introduce la cantidad en stock del producto (Entero): ");
         producto.setCantidadEnStock(sc.nextInt());
         System.out.print("Introduce el precio de venta del producto (Decimal): ");
